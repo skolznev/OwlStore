@@ -1,0 +1,259 @@
+/********** BASE SETTINGS **********/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+/* .main_menu, .main_menu li {
+	border: 1px solid red;
+}  
+.main_menu li a {
+	border: 1px solid blue;
+}  */
+@font-face {
+    font-family: 'Noto Serif';
+    src: url(fonts/NotoSerif-Regular.ttf);
+}
+body {
+	font-family: 'Noto Serif', serif;
+	background-color: #f8f8f8
+}
+
+/********** CONTAINER **********/
+
+.container {
+	min-height: 100%;
+}
+
+/********** HEADER **********/
+
+.header {
+	height: 70px;
+}
+.logo {
+	margin-left: 5%;
+	margin-right: 5%;
+	float: left;
+	height: 70px;
+}
+.main_menu {
+	margin: 0;
+	padding: 0;
+	height: 70px;
+	/*overflow: hidden;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main_menu a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	background: #A6A6A6;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2em;
+}
+.main_menu a:hover {
+	color: #A6A6A6;
+	background: #EAFA07;
+	font-weight: bold;
+}
+
+/********** BODY **********/
+
+.name h1 {
+	text-align: center;
+}
+.name h2 {
+	text-align: center;
+}
+.catalog {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.product {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+
+}
+.product a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	opacity: 0;
+}
+.product a:hover{
+	text-decoration: none;
+	color: #FFF;
+	font-size: 1.2em;
+	background-color: rgba(166, 166, 166, 0.8);
+	opacity: 1;
+}
+
+/********** DISCRIPTION **********/
+
+.discription {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 50px;
+
+}
+.image:hover {
+	border: 1px solid #A6A6A6;
+	border-radius: 10px;
+}
+.discription a {
+	display: block;
+	float: left;
+}
+
+.short_dis {
+	text-align: center;
+}
+
+.short_dis h3 {
+	color: #000;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #eaeaea;
+}
+.short_dis p {
+	display: block;
+	margin: 20px;
+	color: #707070;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+}
+.short_dis a {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	height: 30px;
+	width: 315px;
+	text-decoration: none;
+	background-color: #eb4b4b;
+	color: #FFF;
+	font-size: 1.2em;
+}
+.short_dis a:hover {
+	background-color: #EAFA07;
+	color: #eb4b4b;
+}
+.details h3 {
+	margin-top: 20px;
+	color: #000;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #eaeaea;
+	text-align: center;
+}
+.details li {
+	margin-left: 50px;
+	margin-top: 10px;
+	color: #034d00;
+	font-size: 16px;
+	font-weight: 400;
+	list-style-image: url(img/marker.gif);
+}
+.large_dis h3 {
+	color: #000;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #eaeaea;
+	text-align: center;
+}
+.large_dis p {
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 10px;
+	color: #484342;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: justify;
+} 
+
+/********** CONTACTS **********/
+
+.contacts {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 50px;
+}
+.form {
+	text-align: center;
+}
+.address {
+	text-align: center;
+}
+.map {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#name, #email, #select {
+	width: 250px;
+	height: 30px;
+	text-transform: capitalize;
+}
+
+#textarea {
+	width: 250px;
+	height: 150px;
+	text-transform: capitalize;
+}
+
+input, select {
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.contact_email:hover {
+	color: #EAFA07;
+	background-color: #A6A6A6;
+}
+
+/********** FOOTER **********/
+.clr {
+	height: 150px;
+}
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	background-color: #242424;
+	color: #FFF;
+	text-align: center;
+	margin-top: -150px;
+	clear: both;
+}
+.social a{
+	display: inline-block;
+	margin: 0px 5px;
+	font-size: 1.5em;
+	color: #FFF;
+	text-decoration: none;
+}
+.social a:hover {
+	color: #EAFA07;
+}
+.copyright {
+	margin-top: 25px;
+	font-size: 0.8em;
+}
