@@ -11,5 +11,6 @@ module OwlStore
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+  	# Paperclip.options[:command_path] = 'C:/PROGRA~1/IMAGEM~1.0-Q'
   end
 end

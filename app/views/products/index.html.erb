@@ -1,0 +1,20 @@
+<h1>Listing product</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Discription</th>
+    <th>Color</th>
+    <th>Picture</th>
+  </tr>
+ 
+  <% @products.each do |product| %>
+    <tr>
+      <td><%= product.name %></td>
+      <td><%= product.discription %></td>
+      <td><%= product.color %></td>
+      <td><%= product.picture %></td>
+      <td><%= link_to 'Show', product_path(product) %></td>
+    </tr>
+  <% end %>
+</table>
