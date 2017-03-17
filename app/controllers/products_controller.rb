@@ -1,5 +1,7 @@
 class ProductsController < ApplicationController
 	
+	http_basic_authenticate_with name: "admin", password: "456852", except: [:root]
+
 	def index
 		@products = Product.all
 	end

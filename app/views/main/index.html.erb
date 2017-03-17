@@ -12,13 +12,14 @@
 	<div class="container">
 		<div class="header">
 			<div class="logo">
-				<img src="img/logo.png" alt="Логотип">
+				<a href="index.html.erb"><%= image_tag "logo_small" %></a>
 			</div>
 			<div class="main_menu">
 				<a href="index.html">Главная</a>
 				<a href="catalog.html">Каталог</a>
 				<a href="contacts.html">Контакты</a>
-				<a><%= link_to "Редактирование", controller: 'products' %></a>
+				<%= link_to "Редактирование", controller: 'products' %>
+			</div>
 		</div>
 		<div class="name">
 			<h1>Sneakers Store</h1>
@@ -27,27 +28,27 @@
 		<div class="catalog">
 			<div class="product">
 				<a href="products/products-01.html">Nike Red</a>
-				<img src="img/img1.png" alt="Nike Red" title="Nike Red">
+				<%= image_tag "product_default" %>
 			</div>
 			<div class="product">
 				<a href="products/products-02.html">Nike Green</a>
-				<img src="img/img2.png" alt="Nike Green" title="Nike Green">
+				<%= image_tag "product_default" %>
 			</div>
 			<div class="product">
 				<a href="products/products-03.html">Nike Black</a>
-				<img src="img/img3.png" alt="Nike Black" title="Nike Black">
+				<%= image_tag "product_default" %>
 			</div>
 			<div class="product">
 				<a href="products/products-04.html">Converse</a>
-				<img src="img/img4.png" alt="Converse" title="Converse">
+				<%= image_tag "product_default" %>
 			</div>
 			<div class="product">
 				<a href="products/products-05.html">Nike Blue</a>
-				<img src="img/img5.png" alt="Nike Blue" title="Nike Blue">
+				<%= image_tag "product_default" %>
 			</div>
 			<div class="product">
 				<a href="products/products-06.html">Vance</a>
-				<img src="img/img6.png" alt="Vance" title="Vance">
+				<%= image_tag "product_default" %>
 			</div>
 		</div>
 		<div class="clr"></div>

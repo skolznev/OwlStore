@@ -1,7 +1,7 @@
 class Product < ApplicationRecord
 
 	#Settings for paperclip gem
-	has_attached_file :picture, styles: {}, default_url: "img4.png"
+	has_attached_file :picture, styles: {}, default_url: "product_default.png"
 	validates_attachment_content_type :picture, content_type: /\Aimage\/.*\z/
 
 	#Fields validations 
