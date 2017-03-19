@@ -1,11 +1,12 @@
-<h1>Listing product</h1>
+
+<h1>Admin panel</h1>
 
 <%= link_to "Add product", new_product_path %>
-<%= link_to "Main", root_path %>
 
 <table>
   <tr>
     <th>ID</th>
+    <th>Type</th>
     <th>Name</th>
     <th>Discription</th>
     <th>Color</th>
@@ -15,6 +16,7 @@
   <% @products.each do |product| %>
     <tr>
       <td><%= product.id %></td>
+      <td><%= product.type_product %></td>
       <td><%= product.name %></td>
       <td><%= product.discription %></td>
       <td><%= product.color %></td>

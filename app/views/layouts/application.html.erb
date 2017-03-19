@@ -3,13 +3,41 @@
   <head>
     <title>OwlStore</title>
     <%= csrf_meta_tags %>
-	
-    <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track': 'reload' %>
+	 
+    <%= stylesheet_link_tag    'main', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'default', 'data-turbolinks-track': 'reload' %>
     
   </head>
 
   <body>
+    <div class="header">
+      <div class="logo">
+        <%= link_to (image_tag "logo_small"), root_path %>
+      </div>
+      <div class="main_menu">
+        <%= link_to "Обувь", shoes_index_url %>
+        <%= link_to "Футболки", shoes_index_url %>
+        <%= link_to "Рюкзаки", shoes_index_url %>
+      </div>
+    </div>
+    <div class="name">
+      <h1>Owl Store</h1>
+      <h2>создай свой стиль</h2>
+    </div>
+
     <%= yield %>
+    
+    <div class="clr"></div>
+    <div class="footer">
+      <div class="social">
+        <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      <div class="copyright">
+        <p>Все права защищены &copy;</p>
+        <%= link_to "Редактирование", products_path %>
+      </div>
+    </div>
   </body>
 </html>

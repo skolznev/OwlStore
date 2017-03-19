@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'shoes/index'
+  
   resources :products
 
   root 'main#index'
