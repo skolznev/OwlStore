@@ -29,6 +29,21 @@
 	</p>
 	<hr>
 	<p>
+		<%= f.label :season %><br>
+		<%= f.select :season, ['Лето', 'Осень', 'Зима', 'Весна']%>
+	</p>
+	<hr>
+	<p>
+		<%= f.label :sex %><br>
+		<%= f.select :sex, ['Мужской', 'Женский']%>
+	</p>
+	<hr>
+	<p>
+		<%= f.label :size %><br>
+		<%= f.select :size, ['36', '41', '46']%>
+	</p>
+	<hr>
+	<p>
 		<%= f.label :color %><br>
 		<%= f.select :color, ['красный', 'черный', 'зеленый']%>
 	</p>
@@ -36,6 +51,16 @@
 	<p>
 		<%= f.label :picture %><br>
 		<%= f.file_field :picture %>
+	</p>
+	<hr>
+	<p>
+		<%= f.label :cost %><br>
+		<%= f.text_field :cost %>
+	</p>
+	<hr>
+	<p>
+		<%= f.label :discount %><br>
+		<%= f.text_field :discount %>
 	</p>
 	<hr>
 	<p>

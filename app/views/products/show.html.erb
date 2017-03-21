@@ -24,7 +24,30 @@
 </p>
 
 <p>
-	<strong>Picture:</strong>
-	<%= @product.picture %><br>
+	<strong>Season:</strong>
+	<%= @product.season %>
+</p>
+
+<p>
+	<strong>Sex:</strong>
+	<%= @product.sex %>
+</p>
+
+<p>
+	<strong>Size:</strong>
+	<%= @product.size %>
+</p>
+
+<p>
+	<strong>Cost:</strong>
+	<%= @product.cost.to_s + " рублей" %>
+</p>
+
+<p>
+	<strong>Discount:</strong>
+	<%= @product.discount.to_s + "%" %>
+</p>
+
+<p>
 	<%= image_tag @product.picture.url %>
 </p>
