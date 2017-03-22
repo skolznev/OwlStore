@@ -11,6 +11,46 @@
 <body>
 
 <%= render 'filter_form' %>
+
+<%= form_for :product, url: products_path do |f| %>
+	<p>
+		<strong>Пол:</strong>
+		<%= check_box_tag(:sex_m) %>
+		<%= label_tag(:sex_m, "Мужские") %>
+		<%= check_box_tag(:sex_w) %>
+		<%= label_tag(:sex_w, "Женские") %>
+	</p>
+	<hr>
+	<p>
+		<strong>Сезон:</strong>
+		<%= check_box_tag(:season_summer) %>
+		<%= label_tag(:season_summer, "Лето") %>
+		<%= check_box_tag(:season_autumn) %>
+		<%= label_tag(:season_autumn, "Осень") %>
+		<%= check_box_tag(:season_spring) %>
+		<%= label_tag(:season_spring, "Весна") %>
+		<%= check_box_tag(:season_winter) %>
+		<%= label_tag(:season_winter, "Зима") %>
+	</p>
+	<p>
+		<strong>Бренд:</strong>
+		
+		<%= check_box_tag(:season_summer) %>
+		<%= label_tag(:season_summer, "Лето") %>
+		<%= check_box_tag(:season_autumn) %>
+		<%= label_tag(:season_autumn, "Осень") %>
+		<%= check_box_tag(:season_spring) %>
+		<%= label_tag(:season_spring, "Весна") %>
+		<%= check_box_tag(:season_winter) %>
+		<%= label_tag(:season_winter, "Products.select(:category).map(&:category).uniq") %>
+	</p>
+	<hr>
+	<p>
+		<%= f.submit %>
+	</p>
+	
+<% end %>
+
 	<div class="container">
 		<div class="catalog">
 			<% @products.each do |product| %>
