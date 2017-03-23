@@ -52,4 +52,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #Windows не принимает другие версии
 gem 'coffee-script-source', '1.8.0' 
 #Работа с изображениями
-gem "paperclip", "~> 5.0.0" 
+gem "paperclip", "~> 5.0.0"
+#Bootstrap for Rails
+gem 'bootstrap-sass', '~> 3.3.6'
