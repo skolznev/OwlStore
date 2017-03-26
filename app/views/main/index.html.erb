@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Главная</title>
+<ul id="slides">
+    <li class="slide showing">Slide 1</li>
+    <li class="slide">Slide 2</li>
+    <li class="slide">Slide 3</li>
+    <li class="slide">Slide 4</li>
+    <li class="slide">Slide 5</li>
+</ul>
 
-	<%= stylesheet_link_tag "main", media: "all", "data-turbolinks-track" => "reload" %>
-	<!-- <link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> -->
-</head>
-<body>
-	<div class="container">
-		<div class="catalog">
-			<div class="product">
-				<%= link_to "Обувь", shoes_index_url %>
-				<%= image_tag "product_default" %>
-			</div>
+<div class="container">
+	<div class="catalog">
+		<div class="product">
+			<%= link_to "Обувь", shoes_index_url %>
+			<%= image_tag "product_default" %>
 		</div>
 	</div>
-</body>
-</html>
+</div>
+

@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Главная</title>
-
-	<%= stylesheet_link_tag "main", media: "all", "data-turbolinks-track" => "reload" %>
-	<!-- <link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> -->
-</head>
-<body>
-	<div class="container">
-		<div class="catalog">
-			<% @products.each do |product| %>
-				<div class="product">
-					<%= link_to product.name, product_path(product) %>
-					<%= image_tag product.picture.url %>
-				</div>
-			<% end %>
-		</div>
+<div class="container">
+	<div class="catalog">
+		<% @products.each do |product| %>
+			<div class="product">
+				<%= link_to product.name, product_path(product) %>
+				<%= image_tag product.picture.url %>
+			</div>
+		<% end %>
 	</div>
-</body>
-</html>
+</div>
+
