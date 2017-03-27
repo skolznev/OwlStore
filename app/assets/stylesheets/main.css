@@ -66,7 +66,7 @@ body {
 
 #slides{
     position: relative;
-    height: 150px;
+    height: 400px;
     padding: 0px;
     margin: 0px;
     list-style-type: none;
@@ -99,19 +99,22 @@ body {
     color: #fff;
 }
 .slide:nth-of-type(1){
-    background: red;
+    background-image: url(slide1.jpg);
 }
 .slide:nth-of-type(2){
-    background: orange;
+    background-image: url(slide2.jpg);
 }
 .slide:nth-of-type(3){
-    background: green;
+    background-image: url(slide3.jpg);
 }
 .slide:nth-of-type(4){
-    background: blue;
+    background-image: url(slide4.jpg);
 }
 .slide:nth-of-type(5){
-    background: purple;
+    background-image: url(slide5.jpg);
+}
+.controls {
+    display: none;
 }
 .name h1 {
 	text-align: center;
