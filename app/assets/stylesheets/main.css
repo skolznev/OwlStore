@@ -71,7 +71,9 @@ body {
     margin: 0px;
     list-style-type: none;
 }
-
+.slider {
+	
+}
 .slide{
     position: absolute;
     left: 0px;
@@ -115,6 +117,7 @@ body {
 }
 .controls {
     display: none;
+    position: relative;
 }
 .name h1 {
 	text-align: center;
