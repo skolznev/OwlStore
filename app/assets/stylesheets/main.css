@@ -12,7 +12,7 @@
 }  */
 @font-face {
     font-family: 'Noto Serif';
-    src: url(fonts/NotoSerif-Regular.ttf);
+    src: font-url(NotoSerif-Regular.ttf);
 }
 body {
 	font-family: 'Noto Serif', serif;
