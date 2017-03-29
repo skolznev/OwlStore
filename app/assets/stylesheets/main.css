@@ -4,12 +4,12 @@
 	margin: 0;
 	padding: 0;
 }
-/* .main_menu, .main_menu li {
+ .slider, .controls, .slide {
 	border: 1px solid red;
 }  
-.main_menu li a {
+/*.main_menu li a {
 	border: 1px solid blue;
-}  */
+} */
 @font-face {
     font-family: 'Noto Serif';
     src: font-url(NotoSerif-Regular.ttf);
@@ -118,6 +118,7 @@ body {
 .controls {
     display: none;
     position: relative;
+    z-index: 3;
 }
 .name h1 {
 	text-align: center;
