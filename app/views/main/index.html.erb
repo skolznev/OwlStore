@@ -7,11 +7,18 @@
 	    <li class="slide"></li>
 	</ul>
 	<div class="controls">
-		<%= image_tag "left_arrow_slider", :id => "previous" %>
-		<%= image_tag "", :id => "pause" %>
-		<%= image_tag "right_arrow_slider", :id => "next" %>
+		<div class="arrows">
+			<div class="left">
+				<%= image_tag "left_arrow_slider", :id => "previous" %>
+			</div>
+			<%= image_tag "", :id => "pause" %>
+			<div class="right">
+				<%= image_tag "right_arrow_slider", :id => "next" %>
+			</div>
+		</div>
 	</div>
 </div>
+
 <div class="container">
 	<div class="catalog">
 		<div class="product">
