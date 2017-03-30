@@ -3,6 +3,8 @@
   <head>
     <title>OwlStore</title>
     
+    <!-- <link rel="stylesheet" href="app/assets/fonts/font-awesome/css/font-awesome.min.css"> -->
+    <%= stylesheet_link_tag 'font-awesome', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'main', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'main', 'data-turbolinks-track': 'reload' %>
     <%= csrf_meta_tags %>
@@ -23,6 +25,7 @@
     <div class="name">
       <h1>Owl Store</h1>
       <h2>Uhu... мазафака</h2>
+      <i class="fa fa-vk" aria-hidden="true">tt</i>
     </div>
 
     <%= yield %>
@@ -31,8 +34,6 @@
     <div class="footer">
       <div class="social">
         <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-        <% icon('flag', class: 'strong') %>
-        <% icon('flag', class: 'strong') %>
         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
       </div>
