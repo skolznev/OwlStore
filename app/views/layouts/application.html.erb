@@ -12,7 +12,7 @@
   <body>
     <div class="header">
       <div class="logo">
-        <%= link_to (image_tag "logo_small"), root_path %>
+        <%= link_to "", root_path %>
       </div>
       <div class="main_menu">
         <%= link_to "Обувь", shoes_index_url %>
@@ -30,11 +30,10 @@
     <div class="clr"></div>
     <div class="footer">
       <div class="social">
-        <%= image_tag "vk" %>
+        <%= link_to "", root_path %>
       </div>
       <div class="copyright">
-        <p>Owl Store 2017. Все права защищены &copy;</p>
-        <%= link_to "Редактирование", products_path %>
+        <p><%= link_to "Owl Store 2017. ", products_path %>Все права защищены &copy;</p>
       </div>
     </div>
   </body>
