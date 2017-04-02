@@ -7,7 +7,7 @@
 /*  .slider, .controls, .slide, .left, .right {
 	border: 1px solid red;
 }   */
-/*.main_menu li a {
+/*.header {
 	border: 1px solid blue;
 } */
 /*@font-face {
@@ -28,40 +28,23 @@ body {
 /********** HEADER **********/
 
 .header {
-	height: 80px;
+	height: 160px;
 }
 .logo a {
 	display: block;
 	background: url(logo_small.png);
-	width: 150px;
-	height: 150px;
+	width: 160px;
+	height: 160px;
 	margin: 0 2%;
 	float: left;
 }
 .logo a:hover {
 	background: url(logo_small_hover.png);
 }
-.menu {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+.main_menu {
+	
 }
-.menu_one {
-	background: url(logo_small.png);
-	width: 150px;
-	height: 150px;
-}
-.menu_two {
-	background: url(logo_small.png);
-	width: 150px;
-	height: 150px;
-}
-.menu_three {
-	background: url(logo_small.png);
-	width: 150px;
-	height: 150px;
-}
-/* .main_menu {
+.main_menu_buttons {
 	margin: 0;
 	padding: 0;
 	height: 80px;
@@ -69,28 +52,28 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-.main_menu a {
+.main_menu_buttons a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
 	width: 100%;
-	background: #A6A6A6;
+	background: #fff;
 	text-decoration: none;
-	color: #fff;
+	color: #828181;
+	font-weight: bold;
 	font-size: 1.2em;
 }
-.main_menu a:hover {
-	color: #A6A6A6;
+.main_menu_buttons a:hover {
+	color: #828181;
 	background: #EAFA07;
 	font-weight: bold;
-} */
+} 
 
 /********** BODY **********/
 
 .slider {
 	height: 400px;
-	margin-top: 70px;
 }
 #slides{
     position: absolute;
