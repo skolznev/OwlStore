@@ -1,4 +1,5 @@
 class MainController < ApplicationController
-  def index
-  end
+	def index
+		@products = Product.last(7)
+	end
 end

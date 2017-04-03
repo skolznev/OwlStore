@@ -20,10 +20,15 @@
 </div>
 
 <div class="container">
+	
+	<div class="container">
 	<div class="catalog">
-		<div class="product">
-			<%= link_to "Обувь", shoes_index_url %>
-			<%= image_tag "product_default" %>
-		</div>
+		<% @products.each do |product| %>
+			<div class="product">
+				<%= link_to product.name, product_path(product) %>
+				<%= image_tag product.picture.url %>
+			</div>
+		<% end %>
 	</div>
+</div>
 </div>
