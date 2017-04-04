@@ -1,8 +1,6 @@
-
-<h1>Product</h1>
-
-<%= link_to "Back", shoes_index_url %>
-
+<p>
+	<%= image_tag @product.picture.url %>
+</p>
 <p>
 	<strong>Type:</strong>
 	<%= @product.type_product %>
@@ -48,6 +46,3 @@
 	<%= @product.discount.to_s + "%" %>
 </p>
 
-<p>
-	<%= image_tag @product.picture.url %>
-</p>

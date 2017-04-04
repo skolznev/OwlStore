@@ -170,9 +170,10 @@ body {
 }
 .product a:hover{
 	text-decoration: none;
-	color: #FFF;
-	font-size: 1.2em;
-	background-color: rgba(166, 166, 166, 0.8);
+	color: #fff;
+	font-size: 1.4em;
+	background-color: #fff;
+	text-shadow: 1px 1px 2px black, 0 0 2em black;
 	opacity: 1;
 }
 
