@@ -19,14 +19,20 @@
 	</div>
 </div>
 
-<div class="container">
-	<div class="catalog">
-		<% @products.each do |product| %>
-			<div class="product">
-				<%= link_to product.name + product.cost.to_s, product_path(product) %>
-				<%= image_tag product.picture.url %>
-				<p><%= product.cost %></p>
+<div class="last_products">
+	<% @products.each do |product| %>
+		<div class="product">
+			<div class="product_img">
+				<%= link_to (image_tag product.picture.url), product_path(product) %>
 			</div>
-		<% end %>
-	</div>
+			<div class="product_discription">
+				<div class="product_name"> 
+					<%= product.name %>
+				</div>
+				<div class="product_cost"> 
+					<%= product.cost %>
+				</div>
+			</div>
+		</div>
+	<% end %>
 </div>
