@@ -1,6 +1,6 @@
 class ShoesController < ApplicationController
 	def index
-		@products = Product.all
+		@products = Product.all.reverse
 	end
 	def new
 		@product = Product.new

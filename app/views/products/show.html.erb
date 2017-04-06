@@ -1,48 +1,48 @@
-<p>
-	<%= image_tag @product.picture.url %>
-</p>
-<p>
-	<strong>Type:</strong>
-	<%= @product.type_product %>
-</p>
-
-<p>
-	<strong>Name:</strong>
-	<%= @product.name %>
-</p>
-
-<p>
-	<strong>Discription:</strong>
-	<%= @product.discription %>
-</p>
-
-<p>
-	<strong>Color:</strong>
-	<%= @product.color %>
-</p>
-
-<p>
-	<strong>Season:</strong>
-	<%= @product.season %>
-</p>
-
-<p>
-	<strong>Sex:</strong>
-	<%= @product.sex %>
-</p>
-
-<p>
-	<strong>Size:</strong>
-	<%= @product.size %>
-</p>
-
-<p>
-	<strong>Cost:</strong>
-	<%= @product.cost.to_s + " рублей" %>
-</p>
-
-<p>
-	<strong>Discount:</strong>
-	<%= @product.discount.to_s + "%" %>
-</p>
-
+<hr>
+<div class="product_show">
+	<div class="product_img_show">
+		<%= image_tag @product.picture.url %>
+	</div>
+	<div class="producr_dis_show">
+		<p class="name">
+			<p><strong>Название:</strong></p>
+			<%= @product.name %>
+		</p>
+		<br>
+		<hr>
+		<p class="dis">
+			<p><strong>Описание:</strong></p>
+			<%= @product.discription %>
+		</p>
+		<br>
+		<hr>
+		<p class="color">
+			<p><strong>Цвет:</strong>
+			<%= @product.color %>
+		</p>
+		<p class="season">
+			<strong>Сезон:</strong>
+			<%= @product.season %>
+		</p>
+		<p class="sex">
+			<strong>Пол:</strong>
+			<%= @product.sex %>
+		</p>
+		<p class="size">
+			<strong>Размер:</strong>
+			<%= @product.size %>
+		</p>
+		<br>
+		<hr>
+		<p class="cost">
+			<strong>Цена:</strong>
+			<%= @product.cost.to_s + " рублей" %>
+		</p>
+		<p class="discount">
+			<strong>Скидка:</strong>
+			<%= @product.discount.to_s + "%" %>
+		</p>
+		<br>
+		<button>Оставить заявку</button>
+	</div>
+</div>
