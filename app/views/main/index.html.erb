@@ -23,7 +23,7 @@
 	<% @products.each do |product| %>
 		<div class="product">
 			<div class="product_img">
-				<%= link_to (image_tag product.picture.url), product_path(product) %>
+				<%= image_tag product.picture.url %>
 			</div>
 			<div class="product_discription">
 				<div class="product_name"> 
@@ -33,6 +33,7 @@
 					<%= product.cost.to_i.to_s + " руб." %>
 				</div>
 			</div>
+			<%= link_to "", product_path(product) %>
 		</div>
 	<% end %>
 </div>

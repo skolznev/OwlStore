@@ -7,7 +7,7 @@
 /*.product {
 	border: 1px solid red;
 }   
-.product_discription {
+.product_link {
 	border: 1px solid blue;
 } */
 /*@font-face {
@@ -62,7 +62,7 @@ body {
 	text-decoration: none;
 	color: #828181;
 	font-weight: bold;
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 .main_menu_buttons a:hover {
 	color: #828181;
@@ -160,24 +160,32 @@ body {
 }
 .product_discription {
 	position: relative;
-	height: 40px;
-	bottom: 45px;
+	height: 200px;
+	bottom: 205px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	opacity: 0;
 	color: #828181;
-	font-size: 1.3em;
+	font-size: 1.4em;
+	font-weight: bold;
 }
 .product_cost {
 	color: #42b814;
-	font-weight: bold;
 }
+.product a {
+	display: block;
+	position: relative;
+	height: 200px;
+	bottom: 405px;
+	z-index: 10;
 
+}
 .product:hover .product_discription{
 	opacity: 1;
 	cursor: pointer;
+	background: rgba(255, 255, 255, 0.85);
 
 }
 .product a {
