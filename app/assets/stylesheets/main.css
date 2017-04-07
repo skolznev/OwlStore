@@ -166,6 +166,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	opacity: 0;
 	color: #828181;
 	font-size: 1.4em;
@@ -179,12 +180,9 @@ body {
 	position: relative;
 	height: 200px;
 	bottom: 405px;
-	z-index: 10;
-
 }
 .product:hover .product_discription{
 	opacity: 1;
-	cursor: pointer;
 	background: rgba(255, 255, 255, 1);
 
 }

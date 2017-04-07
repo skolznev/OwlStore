@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
 
 	def show
 		@product = Product.find(params[:id])
+		@products = Product.last(6).reverse
 	end
 
 	def new
