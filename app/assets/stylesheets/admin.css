@@ -1,0 +1,20 @@
+.add_product a{
+	display: block;
+	padding: 22px 46px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+}
+.add_product {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+	width: 210px;
+	height: 60px;
+	background: #42b814;
+	font-size: 0.9em;
+}
+.add_product a:hover {
+	color: #EAFA07;
+}
