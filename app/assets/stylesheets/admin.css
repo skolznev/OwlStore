@@ -18,3 +18,26 @@
 .add_product a:hover {
 	color: #EAFA07;
 }
+table {
+	margin: 20px;
+	border-collapse: collapse;
+	text-align: center;
+	border-color: #000;
+	border-style: solid;
+	border-width: 2px;
+}
+table td{
+	background: #f5f5f5;
+	border-color: #000 #f5f5f5;
+	border-style: solid;
+	border-width: 1px;
+	padding: 2px;
+}
+table th{
+	background: #dedede;
+	border-color: #000;
+	border-style: solid;
+	border-width: 1px;
+	padding: 2px;
+	height: 40px;
+}
