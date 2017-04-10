@@ -35,10 +35,10 @@
         <td><%= product.cost %></td>
         <td><%= product.discount %></td>
         <td><%= image_tag product.picture.url %></td>
-        <td><%= link_to 'Показать', product_path(product) %></td>
-        <td><%= link_to 'Изменить', edit_product_path(product) %></td>
+        <td><%= link_to 'Показать', product_path(product), :class=>"show_button" %></td>
+        <td><%= link_to 'Изменить', edit_product_path(product), :class=>"change_button" %></td>
         <td><%= button_to 'Удалить', product_path(product), 
-                                  method: :delete %></td>
+                                  method: :delete, :class=>"delete_button" %></td>
       </tr>
     <% end %>
   </table>
