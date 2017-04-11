@@ -1,5 +1,5 @@
 <%= form_for @product do |f| %>
-
+<div class="form_product">
 	<% if @product.errors.any? %>
 		<div id="error_explanation">
 			<h2>
@@ -12,7 +12,6 @@
 			</ul>
 		</div>
 	<% end %>
-
 	<p>
 		<%= f.label :name %><br>
 		<%= f.text_field :name %>
@@ -66,5 +65,5 @@
 	<p>
 		<%= f.submit %>
 	</p>
-	
+</div>	
 <% end %>
