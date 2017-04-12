@@ -65,4 +65,24 @@ table th{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 20px;
+}
+.form_product input[type=text]{
+	width: 250px;
+	height: 20px
+}
+.form_product input[type=submit]{
+	width: 250px;
+	height: 40px
+}
+.form_product input[type=file]{
+	width: 250px;
+}
+.form_product textarea{
+	width: 250px;
+	height: 50px
+}
+.form_product select{
+	width: 250px;
+	height: 20px
 }

@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
 	http_basic_authenticate_with name: "admin", password: "456852", except: [:root, :show]
 
 	def index
-		@products = Product.all
+		@products = Product.all.reverse
 	end
 
 	def show
