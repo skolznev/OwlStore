@@ -72,6 +72,8 @@ table th{
 	height: 20px
 }
 .form_product input[type=submit]{
+	display: block;
+	margin-top: 10px;
 	width: 250px;
 	height: 40px
 }

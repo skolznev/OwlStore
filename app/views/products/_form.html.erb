@@ -13,55 +13,46 @@
 		</div>
 	<% end %>
 	<p>
-		<%= f.label :name %><br>
+		<%= f.label "Название" %><br>
 		<%= f.text_field :name %>
 	</p>
-	<hr>
 	<p>
-		<%= f.label :discription %><br>
+		<%= f.label "Описание" %><br>
 		<%= f.text_area :discription %>
 	</p>
-	<hr>
 	<p>
-		<%= f.label :type_product %><br>
+		<%= f.label "Тип продукта" %><br>
 		<%= f.select :type_product, ['Обувь', 'Футболки', 'Рюкзаки']%>
 	</p>
-	<hr>
 	<p>
-		<%= f.label :season %><br>
+		<%= f.label "Сезон" %><br>
 		<%= f.select :season, ['Лето', 'Осень', 'Зима', 'Весна']%>
 	</p>
-	<hr>
 	<p>
-		<%= f.label :sex %><br>
+		<%= f.label "Пол" %><br>
 		<%= f.select :sex, ['М', 'Ж']%>
 	</p>
-	<hr>
 	<p>
-		<%= f.label :size %><br>
+		<%= f.label "Размер" %><br>
 		<%= f.select :size, ['36', '41', '46']%>
 	</p>
-	<hr>
 	<p>
-		<%= f.label :color %><br>
+		<%= f.label "Цвет" %><br>
 		<%= f.select :color, ['красный', 'черный', 'зеленый']%>
 	</p>
-	<hr>
 	<p>
-		<%= f.label :picture %><br>
+		<%= f.label "Фото" %><br>
 		<%= f.file_field :picture %>
 	</p>
 	<hr>
 	<p>
-		<%= f.label :cost %><br>
+		<%= f.label "Цена" %><br>
 		<%= f.text_field :cost %>
 	</p>
-	<hr>
 	<p>
-		<%= f.label :discount %><br>
+		<%= f.label "Скидка" %><br>
 		<%= f.text_field :discount %>
 	</p>
-	<hr>
 	<p>
 		<%= f.submit %>
 	</p>
