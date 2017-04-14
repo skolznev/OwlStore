@@ -6,7 +6,6 @@
     <%= stylesheet_link_tag 'main', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'show', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'admin', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'main', 'data-turbolinks-track': 'reload' %>
     <%= csrf_meta_tags %>
     
   </head>
@@ -41,5 +40,6 @@
         <p><%= link_to "Owl Store 2017. ", products_path %>Все права защищены &copy;</p>
       </div>
     </div>
+    <%= javascript_include_tag 'main', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>
