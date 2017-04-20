@@ -56,3 +56,4 @@ gem "paperclip", "~> 5.0.0"
 #Icons
 # gem 'font-awesome-sass'
 # gem 'font-awesome-rails'
+gem 'pg'
