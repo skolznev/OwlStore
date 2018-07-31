@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20170321170151) do
     t.integer  "picture_file_size"
     t.datetime "picture_updated_at"
     t.string   "type_product"
-    t.string   "season"
+    t.varchar   "season"
     t.string   "sex"
     t.decimal  "size"
     t.decimal  "cost"
